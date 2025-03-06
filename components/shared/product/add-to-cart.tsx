@@ -22,7 +22,7 @@ export default function AddToCart({ item }: { item: CartItem }) {
 
     // Handle success add to a cart
     toast("Congratulations!", {
-      description: `${item.name} added to cart`,
+      description: res.message,
       action: {
         label: "Go To Cart",
         onClick: () => router.push("/cart"),
