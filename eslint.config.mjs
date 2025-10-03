@@ -21,14 +21,14 @@ const eslintConfig = [
       "lib/generated/**",
     ],
   },
-  {
-    rules: {
-      "@typescript-eslint/no-this-alias": "off",
-      "@typescript-eslint/no-require-imports": "off",
-      "@typescript-eslint/no-unused-expressions": "off",
-      "@typescript-eslint/no-unused-vars": "warn",
-    },
-  },
+  // {
+  //   rules: {
+  //     "@typescript-eslint/no-this-alias": "off",
+  //     "@typescript-eslint/no-require-imports": "off",
+  //     "@typescript-eslint/no-unused-expressions": "off",
+  //     "@typescript-eslint/no-unused-vars": "warn",
+  //   },
+  // },
 ];
 
 export default eslintConfig;
