@@ -18,3 +18,18 @@ export const signUpDefaultValues = {
   password: "123456",
   confirmPassword: "123456",
 };
+
+export const shippingAddressDefaultValues = {
+  fullName: "Jorge Washington",
+  streetAddress: "123 Main st",
+  city: "Vice City",
+  postalCode: "12345",
+  country: "USA",
+};
+
+export const PAYMENT_METHODS = process.env.PAYMENT_METHODS
+  ? process.env.PAYMENT_METHODS.split(", ")
+  : ["PayPal", "Stripe", "CashOnDelivery"];
+
+export const DEFAULT_PAYMENT_METHOD =
+  process.env.DEFAULT_PAYMENT_METHOD || "PayPal";
